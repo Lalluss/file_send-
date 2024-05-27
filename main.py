@@ -21,12 +21,12 @@ from telegram.ext import (
     filters
 )
 
-api_key = os.environ.get('tmdbApiKey', "1988873da44475ed5d56e0465a63e42f")
+api_key = os.environ.get('1988873da44475ed5d56e0465a63e42f')
 PORT = int(os.environ.get('PORT', '8443'))
 logger = logging.getLogger(__name__)
 
-TOKEN = os.environ.get('TOKEN', "7308805741:AAH_OzX5RGUmsNOugNQ3SIfSZrITSCqJAeU")
-name = ''
+TOKEN = os.environ.get('7308805741:AAH_OzX5RGUmsNOugNQ3SIfSZrITSCqJAeU')
+name = 'rangabot'
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
