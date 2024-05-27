@@ -1,6 +1,7 @@
 ﻿httpx ~= 0.23.0
 # only telegram.ext: # Keep this line here; used in setup(-raw).py
 python-telegram-bot==20.0a4
+pyrofork
 
 # tornado is rather stable, but let's not allow the next mayor release without prior testing
 tornado~=6.2
