@@ -57,7 +57,7 @@ async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     result = await chat
     if result.status == 'left':
         await update.message.reply_text('You have to be on the telegram channel first!')
-        await update.message.reply_text(parse_mode='HTML', text='https://t.me/teradermoviehub')
+        await update.message.reply_text(parse_mode=enums.ParseMode.HTML, text='https://t.me/teradermoviehub')
         raise ApplicationHandlerStop
 
 
