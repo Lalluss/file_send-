@@ -37,7 +37,7 @@ DOWNLOAD, DETAILS, = range(2)
 ONE, TWO = range(2)
 START_ROUTES, END_ROUTES = range(2)
 # Callback data
-THREE, FOUR = range(4)
+THREE, FOUR = range(2)
 
 ResultsCache = {}
 ResultsPerPage = 1
