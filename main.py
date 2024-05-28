@@ -22,7 +22,7 @@ from telegram.ext import (
 )
 
 api_key = os.environ.get('tmdbApiKey', "1988873da44475ed5d56e0465a63e42f")
-PORT = int(os.environ.get('PORT', '8080'))
+PORT = int(os.environ.get('PORT', '8443'))
 logger = logging.getLogger(__name__)
 
 TOKEN = os.environ.get('TOKEN', "7308805741:AAH_OzX5RGUmsNOugNQ3SIfSZrITSCqJAeU")
