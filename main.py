@@ -261,7 +261,7 @@ async def search_item(update: Update, message) -> None:
 
     if req:
         # send the first message with the pagination links
-        item = req[0]
+        item = req
 
         # the result gotten from the api can have either a title as a key or a name as a key
         # depending on if it is a movie or series
