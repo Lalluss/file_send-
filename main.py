@@ -54,8 +54,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Check if the user belongs to the telegram group"""
     chat = context.bot
-    chat = chat.getChatMember(user_id=update.effective_user.id, chat_id='@teradermoviehub')
-    result = await chat
+    result = chat.getChatMember(user_id=update.effective_user.id, chat_id='@teradermoviehub')
     if result.status == 'left':
         await update.message.reply_text('You have to be on the telegram channel first!')
         await update.message.reply_text(parse_mode=enums.ParseMode.HTML, text='https://t.me/teradermoviehub')
