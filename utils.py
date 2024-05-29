@@ -5,6 +5,7 @@ import io
 import urllib.request
 api_key = os.environ.get('tmdbApiKey')
 
+results = []
 
 def month_converter(date):
     # date = date.split('-')
