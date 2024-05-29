@@ -3,7 +3,7 @@ import requests
 import asyncio
 import io
 import urllib.request
-api_key = os.environ.get('tmdbApiKey')
+api_key = os.environ.get('tmdbApiKey', '1988873da44475ed5d56e0465a63e42f')
 
 def month_converter(date):
     # date = date.split('-')
