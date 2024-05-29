@@ -276,7 +276,7 @@ async def search_item(update: Update, message) -> None:
         req_cols.append(title_key)
 
         # get the image for the movie
-        movie_poster_url = f'https://image.tmdb.org/t/p/w500{item["poster_path"]}'
+        movie_poster_url = f'https://image.tmdb.org/t/p/w500{item}'
         file_obj = await get_raw_image(movie_poster_url=movie_poster_url)
 
         # generate a new UUID
