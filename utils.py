@@ -32,6 +32,7 @@ def month_converter(date):
 async def search(query, category="movie"):
     req = requests.get(f'https://api.themoviedb.org/3/search/{category}?api_key={api_key}'
                        f'&language=en-US&query={query}&page=1&include_adult=false')
+    results = [0]
     req = req.json()['results']
     return req
 
