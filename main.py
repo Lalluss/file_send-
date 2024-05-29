@@ -26,6 +26,7 @@ PORT = int(os.environ.get('PORT', '8443'))
 logger = logging.getLogger(__name__)
 
 TOKEN = os.environ.get('TOKEN', "7308805741:AAH_OzX5RGUmsNOugNQ3SIfSZrITSCqJAeU")
+DEBUG = os.environ.get('DEBUG', "True")
 name = 'rangabot'
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
