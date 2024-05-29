@@ -514,7 +514,7 @@ def main():
     application.add_handler(CommandHandler('help', help_func))
     application.add_handler(MessageHandler(filters.TEXT, get_type))
     application.add_handler(con_hand)
-    if os.environ.get('DEBUG', False):
+    if os.environ.get('DEBUG', True):
         application.run_polling()
     else:
         application.run_webhook()
