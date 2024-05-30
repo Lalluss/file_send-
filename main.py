@@ -343,8 +343,8 @@ async def search_item(update: Update, message) -> None:
             # save the results for easy pagination
             ResultsCache[update.effective_message.chat_id].update(
                 {unique_id_str: [{f'{index + 1}': {key: movie_item[key] for key in req_cols}
-                                for index, movie_item in enumerate(req)}]
-            }
+                                for index, movie_item in enumerate(req)}]}
+            )
 
     else:
         await update.callback_query.message.reply_text(
