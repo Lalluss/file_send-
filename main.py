@@ -346,10 +346,10 @@ async def search_item(update: Update, message) -> None:
                                 for index, movie_item in enumerate(req)}]
             }
 
-    else:
-        await update.callback_query.message.reply_text(
-            f'No results for {query.data}, was found...are you sure you typed the correct thing?'
-            f' Please refer to /usage')
+        else:
+            await update.callback_query.message.reply_text(
+                f'No results for {query.data}, was found...are you sure you typed the correct thing?'
+                f' Please refer to /usage')
 
 
 async def download_links(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
